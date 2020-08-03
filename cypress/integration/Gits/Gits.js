@@ -11,8 +11,8 @@ const sigIn = new SignInPage();
 
 Given(`user access gist`, () => {
   sigIn.visit();
-  sigIn.fillUsername("danang31");
-  sigIn.fillPassword("danang312020");
+  sigIn.fillUsername("Username");
+  sigIn.fillPassword("Password");
   sigIn.submit();
 });
 
