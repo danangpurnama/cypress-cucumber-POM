@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://gist.github.com",
+    "env": {
+        "something": "production"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "testFiles": "**/*.feature",
+    "baseUrl": "https://gist.github.com",
+    "viewportWidth": 1280,
+    "viewportHeight": 800
+}
