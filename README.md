@@ -1,4 +1,4 @@
-# cypress-cucumber-example
+# cypress-cucumber-Page Object Model
 
 Initial example of using Cypress with Cucumber.
 
