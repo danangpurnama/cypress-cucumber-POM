@@ -4,15 +4,17 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "developmentgits": "cypress open",
-    "testgits": "cypress run --spec \"**/Gits.feature\" --browser chrome"
+    "developmentgist": "cypress open",
+    "testgist": "cypress run --spec \"**/Gist.feature\" --browser chrome --reporter mochawesome --reporter-options reportDir=reports/mochawesome/",
+    "reports": "open 'reports/mochawesome/mochawesome.html'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.10.0",
     "cypress-cucumber-preprocessor": "^2.5.3",
-    "cypress-xpath": "^1.6.0"
+    "cypress-xpath": "^1.6.0",
+    "mochawesome": "^3.0.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true

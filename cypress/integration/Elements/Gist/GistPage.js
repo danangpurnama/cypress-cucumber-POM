@@ -1,15 +1,11 @@
-class GitsPage {
-  visitGitsPage() {
-    cy.visit("/danang31");
-  }
-
-  fillGitsname(value) {
+class GistPage {
+  fillgistname(value) {
     const field = cy.get(".input-group > .form-control");
     field.clear();
     field.type(value);
   }
 
-  fillGitsvalue(value) {
+  fillgistvalue(value) {
     const field = cy.get(".commit-create.position-relative");
     field.type(value);
   }
@@ -27,21 +23,21 @@ class GitsPage {
     button.click();
   }
 
-  detailgits(value) {
+  detailgist(value) {
     cy.xpath(
       `(//*[normalize-space(text()) and normalize-space(.)='${value}'])[1]`
     ).click();
   }
 
-  editgits() {
+  editgist() {
     cy.get(".pagehead-actions > :nth-child(1) > .btn").click();
   }
 
-  updategits() {
+  updategist() {
     cy.get(".btn-primary").click();
   }
 
-  deletegits() {
+  deletegist() {
     cy.get(":nth-child(2) > form > .btn").click();
   }
 
@@ -54,4 +50,4 @@ class GitsPage {
   }
 }
 
-export default GitsPage;
+export default GistPage;

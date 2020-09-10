@@ -16,15 +16,25 @@ npm install
 Developtment
 
 ```
-npm run developmentgits
+npm run developmentgist
 ```
 
 Test
 
 ```
-npm run testgits
+npm run testgist
+```
+
+Report
+
+```
+npm run report
 ```
 
 # Notes
 
-Don't forget change credential
+Don't forget change credential in this file
+
+```
+cypress/fixtures/testdata.json
+```
