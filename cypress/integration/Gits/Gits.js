@@ -11,8 +11,8 @@ const sigIn = new SignInPage();
 
 Given(`user access gist`, () => {
   sigIn.visit();
-  sigIn.fillUsername("Username");
-  sigIn.fillPassword("Password");
+  sigIn.fillUsername("tiket9121@gmail.com");
+  sigIn.fillPassword("tiket.2020");
   sigIn.submit();
 });
 
@@ -20,6 +20,8 @@ When(`user add new public gist`, () => {
   home.ButtonCreateNewGits();
   gits.fillGitsname(random);
   gits.fillGitsvalue(random);
+  gits.button_dropdown();
+  gits.button_public_gist();
   gits.submit();
 });
 

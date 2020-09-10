@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "developmentgits": "cypress open",
-    "developmentebay": "cypress open --env configFile=ebay",
-    "testgits": "cypress run --spec \"**/Gits.feature\" --browser chrome",
-    "testebay": "cypress run --spec \"**/Ebay.feature\" --browser chrome --env configFile=ebay"
+    "testgits": "cypress run --spec \"**/Gits.feature\" --browser chrome"
   },
   "author": "",
   "license": "ISC",

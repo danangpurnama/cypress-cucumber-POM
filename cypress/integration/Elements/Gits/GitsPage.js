@@ -14,8 +14,16 @@ class GitsPage {
     field.type(value);
   }
 
+  button_dropdown() {
+    cy.get(".details-reset > .btn").click();
+  }
+
+  button_public_gist() {
+    cy.get(".select-menu-modal > :nth-child(2)").click();
+  }
+
   submit() {
-    const button = cy.get('[value="1"]');
+    const button = cy.get(".hx_create-pr-button");
     button.click();
   }
 
