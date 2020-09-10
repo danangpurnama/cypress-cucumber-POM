@@ -11,8 +11,8 @@ const sigIn = new SignInPage();
 
 Given(`user access gist`, () => {
   sigIn.visit();
-  sigIn.fillUsername("tiket9121@gmail.com");
-  sigIn.fillPassword("tiket.2020");
+  sigIn.fillUsername("email");
+  sigIn.fillPassword("password");
   sigIn.submit();
 });
 
